@@ -1,2 +1,9 @@
-<h1>Binaries#question</h1>
-<p>Find me in app/views/binaries/question.html.erb</p>
+<%= form_with(model: @binary, url: binaries_path, local: true) do |form| %>
+  <h1>以下の2進数を10進数に変換せよ</h1>
+  <h2><%= @question %></h2>
+
+  <%= form.text_field :answer %>
+  <%= form.hidden_field :correct_answer %>
+
+  <%= form.submit "回答する" %>
+<% end %>
