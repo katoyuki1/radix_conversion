@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RadixConversion</title>
+    <title>２・８・１６暗算アプリ</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header class="header">
+      <li>
+        <ul>
+          ２・８・１６暗算アプリ
+        </ul>
+      </li>
+    </header>
+
     <%= yield %>
+
+    <footer class="footer">
+    </footer>
   </body>
 </html>

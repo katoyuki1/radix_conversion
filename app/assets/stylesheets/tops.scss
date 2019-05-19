@@ -1,6 +1,19 @@
 // Place all the styles related to the tops controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-ul {
-  list-style: none;
+li {
+  list-style-type: none;
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  border: solid;
+  font-size: 400%;
+  padding: 2px 2px 2px 2px;
+  border-radius: 10%;
+  background-color: #EEEEEE;
+  box-shadow: 3px 3px 5px 1px rgba(0,0,0,.3);
+  color: black;
 }
