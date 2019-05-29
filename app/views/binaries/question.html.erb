@@ -1,10 +1,14 @@
-<%= form_with(model: @binary, url: binaries_path, local: true) do |form| %>
-  <h1>以下の2進数を10進数に変換せよ</h1>
-  <h2><%= @question %></h2>
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10 text-center">
+    <%= form_with(model: @binary, url: binaries_path, local: true) do |form| %>
+      <h1>以下の2進数を10進数に変換せよ</h1>
+      <h2><%= @question %></h2>
 
-  <%= form.text_field :answer %>
-  <%= form.hidden_field :correct_answer %>
+      <%= form.text_field :answer %>
+      <%= form.hidden_field :correct_answer %>
 
-  <%= form.submit "回答する" %>
-<% end %>
-<%= link_to "トップ画面に戻る", root_path %>
+      <%= form.submit "回答する" %>
+    <% end %>
+    <%= link_to "トップ画面に戻る", root_path %>
+  </div>
+</div>
