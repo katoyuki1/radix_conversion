@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="wrapper col-md-8 col-md-offset-2 col-sm-10 text-center">
+    <p><%= notice %></p>
+    <p>回答:<%= @octal.answer %></p>
+    <p>正解:<%= @octal.correct_answer %></p>
+
+    <%= link_to "もう一度解く", octals_path %>
+    <%= link_to "トップ画面に戻る", root_path %>
+    </div>
+</div>
