@@ -1,7 +1,7 @@
 <div class="container">
   <div class="wrapper col-md-8 col-md-offset-2 col-sm-10 text-center">
-    <%= form_with(model: @octal, url: octals_path, local: true) do |form| %>
-      <h1>以下の8進数を10進数に変換せよ</h1>
+    <%= form_with(model: @hexadecimal, url: hexadecimals_path, local: true) do |form| %>
+      <h1>以下の16進数を10進数に変換せよ</h1>
       <h2><%= @question %></h2>
 
       <%= form.text_field :answer %>

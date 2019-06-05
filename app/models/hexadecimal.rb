@@ -1,0 +1,2 @@
+class Hexadecimal < ApplicationRecord
+end
